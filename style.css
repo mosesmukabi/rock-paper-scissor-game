@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family:
+    "Press Start 2p",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+.parent {
+  padding-bottom: 0.5rem;
+  margin: auto 25%;
+  background-color: rgb(158, 201, 30);
+  display: flex;
+  height: auto;
+  flex-direction: column;
+}
+.header .header_items {
+  padding: 0.5rem;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.blue {
+  color: blue;
+  text-decoration: underline;
+}
+.header_items .left,
+.right {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.computer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 0;
+}
+.computer .title h1 {
+  padding: 0.5rem;
+}
+
+.computer .title button {
+  height: 8rem;
+  width: 8rem;
+  border: dotted 2px black;
+  background: transparent;
+  font-size: 6rem;
+}
+
+/*########### Game items ##################3*/
+.game_items {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+button {
+  font-size: 3rem;
+  border: none;
+  border-radius: 0.5rem;
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+}
+
+.game_items .img {
+  background-color: white;
+  border-radius: 1rem;
+  width: 7rem;
+  height: 7rem;
+}
+
+.result {
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 0.5rem;
+  background-color: rgb(242, 194, 68);
+}
+
+.game_items h1 {
+  padding: 0.8rem;
+}
+
+@media screen and (max-width: 550px) {
+  .parent {
+    margin: 0 0;
+    min-height: 100vh;
+  }
+  .header_items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.5rem 0;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  h1 {
+    font-size: 0.8rem;
+  }
+  .header_items .left {
+    margin: 0.4rem 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+  .game_items .img h1 {
+    /* font-size: .5rem; */
+    padding: 1rem 0;
+  }
+  .game_items .img button {
+    font-size: 3rem;
+    padding: 0 2rem;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 551px) and (max-width: 700px) {
+  .parent {
+    margin: 0 0;
+    min-height: 100vh;
+  }
+  h1 {
+    font-size: 0.7rem;
+  }
+  .header_items .left {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+  .game_items .img button {
+    font-size: 3rem;
+    padding: 0 2rem;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 900px) {
+  .parent {
+    margin: 0 10%;
+    height: 100vh;
+  }
+
+  .game_items .img {
+    height: 8.5rem;
+  }
+
+  h1 {
+    font-size: 0.7rem;
+  }
+  .header_items .left {
+    margin: 0.3rem 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+  .game_items .img button {
+    font-size: 4rem;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .parent {
+    height: 100vh;
+    margin: 0 20%;
+  }
+
+  .img button {
+    font-size: 4rem;
+    height: auto;
+  }
+  .game_items {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .game_items {
+    gap: 1rem;
+  }
+
+  .game_items {
+    margin-top: 1rem;
+  }
+  .game_items .img {
+    max-width: 30%;
+  }
+  h1 {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="parent">
+      <header class="header">
+        <div class="header_items">
+          <div class="left">
+            &copy;
+            <h1>2024</h1>
+            <h1 class="blue">
+              <a href="https://x.com/mukabi_N">Moses Mukabi</a>
+            </h1>
+          </div>
+          <div class="left">
+            <h1>Computer</h1>
+            <h1 id="computerPoints">0</h1>
+            <h1 id="playersPoints">0</h1>
+            <h1>Player</h1>
+          </div>
+        </div>
+      </header>
+
+      <section class="computer">
+        <div class="title">
+          <h1>Computer</h1>
+          <button id="currentComputerPlayer"></button>
+        </div>
+      </section>
+
+      <section class="result">
+        <p id="results">Start Game</p>
+      </section>
+
+      <section class="computer">
+        <div class="title">
+          <h1>Player</h1>
+          <button id="currentPlayer"></button>
+        </div>
+      </section>
+
+      <section class="game_items">
+        <div class="rock img">
+          <button id="rock">👊</button>
+          <h1 class="text">rock</h1>
+        </div>
+        <div class="paper img">
+          <button id="paper">✋</button>
+          <h1 class="text">paper</h1>
+        </div>
+        <div class="scissors img">
+          <button id="scissors">✌</button>
+          <h1 class="text">scissors</h1>
+        </div>
+      </section>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
