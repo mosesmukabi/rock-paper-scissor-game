@@ -1,5 +1,6 @@
 const computers_points = document.getElementById("computerPoints");
 const players_points = document.getElementById("playersPoints");
+const drawPoints = document.getElementById("drawPoints")
 const computerPlayerItem = document.getElementById("currentComputerPlayer");
 const playerItem = document.getElementById("currentPlayer");
 
@@ -9,6 +10,7 @@ const scissorsBtn = document.getElementById("scissors");
 
 let computerScore = 0;
 let playerScore = 0;
+let drawScore = 0;
 
 function play() {
   const playerOptions = [rockBtn, paperBtn, scissorsBtn];
@@ -38,6 +40,8 @@ const results = (player, computer) => {
 
   if (player === computer) {
     game_results.textContent = "Draw";
+    drawScore++
+    drawPoints.textContent = drawScore
   } else if (player == "✌") {
     if (computer == "✋") {
       game_results.textContent = "Player Wins";

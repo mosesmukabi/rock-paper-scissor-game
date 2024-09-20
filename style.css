@@ -72,6 +72,7 @@ h1 {
   border: dotted 2px black;
   background: transparent;
   font-size: 6rem;
+  cursor: default;
 }
 
 .game_items {
@@ -103,6 +104,7 @@ button {
   padding: 1rem 0;
   margin-top: 0.5rem;
   background-color: rgb(242, 194, 68);
+  text-transform: uppercase;
 }
 
 .game_items h1 {
