@@ -22,7 +22,6 @@ body {
 }
 
 .parent {
-  padding-bottom: 0.5rem;
   margin: auto 25%;
   background-color: rgb(158, 201, 30);
   display: flex;
@@ -75,7 +74,6 @@ h1 {
   font-size: 6rem;
 }
 
-/*########### Game items ##################3*/
 .game_items {
   margin-top: 1rem;
   display: flex;
@@ -88,7 +86,6 @@ h1 {
 button {
   font-size: 3rem;
   border: none;
-  border-radius: 0.5rem;
   width: 100%;
   cursor: pointer;
   background: transparent;
